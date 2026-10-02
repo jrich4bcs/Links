@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BCS Links</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --card: #ffffff;
+    --text: #1f2933;
+    --muted: #616e7c;
+    --accent: #1d4ed8;
+    --border: #e1e4e8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171c;
+      --card: #1e232a;
+      --text: #e6e9ee;
+      --muted: #9aa5b1;
+      --accent: #7aa7ff;
+      --border: #2c333c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 48px 16px;
+  }
+  h1 {
+    margin: 0 0 24px;
+    font-size: 2rem;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+  }
+  a {
+    display: block;
+    padding: 16px 20px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+    transition: border-color .15s, transform .15s;
+  }
+  a:hover, a:focus-visible {
+    border-color: var(--accent);
+    transform: translateY(-1px);
+    outline: none;
+  }
+  a span {
+    display: block;
+    font-weight: 400;
+    font-size: .85rem;
+    color: var(--muted);
+    word-break: break-all;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>BCS links</h1>
+
+  <!-- To add a link, copy one <li>...</li> line and change the URL and name. -->
+  <ul>
+    <li><a href="https://helpdesk263.github.io/Rename/" target="_blank" rel="noopener">File Rename<span>helpdesk263.github.io/Rename</span></a></li>
+    <li><a href="https://helpdesk263.github.io/PES_Viewer/" target="_blank" rel="noopener">PES Viewer<span>helpdesk263.github.io/PES_Viewer</span></a></li>
+  </ul>
+</main>
+</body>
+</html>
